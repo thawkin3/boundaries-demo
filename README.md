@@ -9,7 +9,7 @@ This project is meant to demonstrate some concepts from Chapter 8 of Clean Code.
 1. Create your own interface
 2. More easily mock the third-party library in your code
 3. Easily adapt to changes in the third-party library's API
-4. Swap out underlying libraries if you want to change in the future
+4. Swap out underlying libraries if you want to change libraries in the future
 
 **Write "learning tests" to document a third-party library. This allows you to:**
 
