@@ -19,3 +19,9 @@ This project is meant to demonstrate some concepts from Chapter 8 of Clean Code.
 **Use mock data when the code you're integrating with doesn't exist yet. This allows you to:**
 
 1. Not be blocked if you're a frontend developer waiting on a backend developer to create the backend API
+
+## Running the App Locally
+
+1. `yarn install`
+2. `yarn start`
+3. Navigate to http://localhost:3000/ in your browser
