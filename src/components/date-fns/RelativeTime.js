@@ -1,14 +1,27 @@
 import React, { useState } from 'react'
-import dayjs from 'dayjs'
-import relativeTime from 'dayjs/plugin/relativeTime'
-
-dayjs.extend(relativeTime)
+import { format, formatDistanceToNow } from 'date-fns'
 
 export const RelativeTime = () => {
   const [dateString, setDateString] = useState('')
 
   const handleChange = (e) => {
     setDateString(e.target.value)
+  }
+
+  const formatDate = () => {
+    try {
+      return format(new Date(dateString), 'MMMM dd, yyyy')
+    } catch (e) {
+      return 'Invalid Date'
+    }
+  }
+
+  const formatRelativeTime = () => {
+    try {
+      return formatDistanceToNow(new Date(dateString), { addSuffix: true })
+    } catch (e) {
+      return 'NaN'
+    }
   }
 
   return (
@@ -27,8 +40,7 @@ export const RelativeTime = () => {
       <br />
       <br />
       <p>
-        {dayjs(dateString).format('MMMM DD, YYYY')} is/was{' '}
-        <b>{dayjs(dateString).fromNow()}</b>
+        {formatDate()} is/was <b>{formatRelativeTime()}</b>
       </p>
     </section>
   )

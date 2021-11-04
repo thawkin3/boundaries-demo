@@ -32,3 +32,5 @@ This project is meant to demonstrate some concepts from Chapter 8 of Clean Code.
 - Day.js time from now: https://day.js.org/docs/en/display/from-now
 - Moment.js: https://momentjs.com/
 - date-fns: https://date-fns.org/
+- date-fns format: https://date-fns.org/v2.25.0/docs/format
+- date-fns time from now: https://date-fns.org/v2.25.0/docs/formatDistanceToNow

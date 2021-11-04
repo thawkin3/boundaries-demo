@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import dayjs from 'dayjs'
+import { format } from 'date-fns'
 
 export const CurrentDateTime = () => {
   const [currentTime, setCurrentTime] = useState(new Date())
@@ -16,7 +16,7 @@ export const CurrentDateTime = () => {
   return (
     <section>
       <h2>Current Date and Time</h2>
-      <p>{dayjs(currentTime).format('MMMM DD, YYYY HH:mm:ss')}</p>
+      <p>{format(new Date(currentTime), 'MMMM dd, yyyy HH:mm:ss')}</p>
     </section>
   )
 }

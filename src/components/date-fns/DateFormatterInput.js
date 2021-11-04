@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
-import dayjs from 'dayjs'
+import { format } from 'date-fns'
 
 export const DateFormatterInput = () => {
   const [dateString, setDateString] = useState('')
 
   const handleChange = (e) => {
     setDateString(e.target.value)
+  }
+
+  const formatDate = () => {
+    try {
+      return format(new Date(dateString), 'MMMM dd, yyyy')
+    } catch (e) {
+      return 'Invalid Date'
+    }
   }
 
   return (
@@ -27,8 +35,7 @@ export const DateFormatterInput = () => {
         <b>You entered:</b> {dateString}
       </p>
       <p>
-        <b>The formatted date is:</b>{' '}
-        {dayjs(dateString).format('MMMM DD, YYYY')}
+        <b>The formatted date is:</b> {formatDate()}
       </p>
     </section>
   )

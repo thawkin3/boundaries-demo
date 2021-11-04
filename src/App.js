@@ -1,7 +1,7 @@
 import React from 'react'
-import { CurrentDateTime } from './components/momentjs/CurrentDateTime'
-import { DateFormatterInput } from './components/momentjs/DateFormatterInput'
-import { RelativeTime } from './components/momentjs/RelativeTime'
+import { CurrentDateTime } from './components/date-fns/CurrentDateTime'
+import { DateFormatterInput } from './components/date-fns/DateFormatterInput'
+import { RelativeTime } from './components/date-fns/RelativeTime'
 import './App.css'
 
 function App() {
