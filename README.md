@@ -25,3 +25,10 @@ This project is meant to demonstrate some concepts from Chapter 8 of Clean Code.
 1. `yarn install`
 2. `yarn start`
 3. Navigate to http://localhost:3000/ in your browser
+
+## Resources
+
+- Day.js format: https://day.js.org/docs/en/display/format
+- Day.js time from now: https://day.js.org/docs/en/display/from-now
+- Moment.js: https://momentjs.com/
+- date-fns: https://date-fns.org/
