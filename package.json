@@ -1,11 +1,17 @@
 {
   "name": "boundaries-demo",
   "version": "1.0.0",
+  "author": "Tyler Hawkins",
+  "license": "ISC",
   "description": "Demo of Clean Code Chapter 8: Boundaries",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "format": "prettier --write .",
+    "format-watch": "onchange . -- prettier --write {{changed}}",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "keywords": [
     "clean",
@@ -16,12 +22,31 @@
     "api",
     "third-party"
   ],
-  "author": "Tyler Hawkins",
-  "license": "ISC",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
-    "babel-jest": "^27.3.1",
-    "jest": "^27.3.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5",
+    "react-scripts": "3.4.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
