@@ -1,15 +1,18 @@
 h1 {
   padding: 0;
   margin: 0 0 2rem 0;
+  color: #f6f6f6;
 }
 
 h2 {
   margin: 0 0 1rem 0;
+  color: #107e7d;
 }
 
 section {
-  border: solid 0.0625rem #000;
+  border: solid 0.0625rem #107e7d;
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 0 0 2rem 0;
+  background: #f6f6f6;
 }
