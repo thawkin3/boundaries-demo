@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { formatDate } from '../../DateApiWrapper'
+import moment from 'moment'
 
 export const CurrentDateTime = () => {
   const [currentTime, setCurrentTime] = useState(new Date())
@@ -16,7 +16,7 @@ export const CurrentDateTime = () => {
   return (
     <section>
       <h2>Current Date and Time</h2>
-      <p>{formatDate(currentTime, 'MMMM DD, YYYY HH:mm:ss')}</p>
+      <p>{moment(currentTime).format('MMMM DD, YYYY HH:mm:ss')}</p>
     </section>
   )
 }

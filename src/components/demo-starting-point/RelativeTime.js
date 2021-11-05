@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { formatDate } from '../../DateApiWrapper'
+import moment from 'moment'
 
-export const DateFormatterInput = () => {
+export const RelativeTime = () => {
   const [dateString, setDateString] = useState('')
 
   const handleChange = (e) => {
@@ -10,24 +10,22 @@ export const DateFormatterInput = () => {
 
   return (
     <section>
-      <h2>Take a User Input and Format It</h2>
-      <label htmlFor="date-formatter-input">
+      <h2>Relative Time</h2>
+      <label htmlFor="relative-time-input">
         Enter a date string (in just about any format!)
       </label>
       <br />
       <br />
       <input
-        id="date-formatter-input"
+        id="relative-time-input"
         value={dateString}
         onChange={handleChange}
       />
       <br />
       <br />
       <p>
-        <b>You entered:</b> {dateString}
-      </p>
-      <p>
-        <b>The formatted date is:</b> {formatDate(dateString, 'MMMM DD, YYYY')}
+        {moment(dateString).format('MMMM DD, YYYY')} is/was{' '}
+        <b>{moment(dateString).fromNow()}</b>
       </p>
     </section>
   )

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { formatDate } from '../../DateApiWrapper'
+import moment from 'moment'
 
 export const DateFormatterInput = () => {
   const [dateString, setDateString] = useState('')
@@ -27,7 +27,8 @@ export const DateFormatterInput = () => {
         <b>You entered:</b> {dateString}
       </p>
       <p>
-        <b>The formatted date is:</b> {formatDate(dateString, 'MMMM DD, YYYY')}
+        <b>The formatted date is:</b>{' '}
+        {moment(dateString).format('MMMM DD, YYYY')}
       </p>
     </section>
   )

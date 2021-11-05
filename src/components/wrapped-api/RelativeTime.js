@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import dayjs from 'dayjs'
-import relativeTime from 'dayjs/plugin/relativeTime'
-
-dayjs.extend(relativeTime)
+import { formatDate, formatRelativeTimeToNow } from '../../DateApiWrapper'
 
 export const RelativeTime = () => {
   const [dateString, setDateString] = useState('')
@@ -15,7 +12,7 @@ export const RelativeTime = () => {
     <section>
       <h2>Relative Time</h2>
       <label htmlFor="relative-time-input">
-        Enter a date string (MM/DD/YYYY)
+        Enter a date string (in just about any format!)
       </label>
       <br />
       <br />
@@ -27,8 +24,8 @@ export const RelativeTime = () => {
       <br />
       <br />
       <p>
-        {dayjs(dateString).format('MMMM DD, YYYY')} is/was{' '}
-        {dayjs(dateString).fromNow()}
+        {formatDate(dateString, 'MMMM DD, YYYY')} is/was{' '}
+        <b>{formatRelativeTimeToNow(dateString)}</b>
       </p>
     </section>
   )
