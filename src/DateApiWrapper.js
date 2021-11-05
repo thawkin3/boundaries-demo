@@ -2,13 +2,13 @@
 // Using Moment.js
 //////////////////////////////////////////////////////////
 
-// import moment from 'moment'
+import moment from 'moment'
 
-// export const formatDate = (dateString, desiredFormat) =>
-//   moment(dateString).format(desiredFormat)
+export const formatDate = (dateString, desiredFormat) =>
+  moment(dateString).format(desiredFormat)
 
-// export const formatRelativeTimeToNow = (dateString) =>
-//   moment(dateString).fromNow()
+export const formatRelativeTimeToNow = (dateString) =>
+  moment(dateString).fromNow()
 
 //////////////////////////////////////////////////////////
 // Using Day.js

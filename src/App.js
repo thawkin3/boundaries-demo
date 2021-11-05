@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { AppSectionSwticher } from './AppSectionSwitcher'
-import { DemoStartingPointPage } from './components/demo-starting-point/DemoStartingPointPage'
-import { MomentJsPage } from './components/momentjs/MomentJsPage'
-import { DayJsPage } from './components/dayjs/DayJsPage'
-import { DateFnsPage } from './components/date-fns/DateFnsPage'
-import { WrappedApiPage } from './components/wrapped-api/WrappedApiPage'
+import { DemoStartingPointPage } from './components/00-demo-starting-point/DemoStartingPointPage'
+import { MomentJsPage } from './components/01-momentjs/MomentJsPage'
+import { DayJsPage } from './components/02-dayjs/DayJsPage'
+import { DateFnsPage } from './components/03-date-fns/DateFnsPage'
+import { WrappedApiPage } from './components/04-wrapped-api/WrappedApiPage'
 import './App.css'
 
 function App() {
