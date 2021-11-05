@@ -5,6 +5,7 @@
   "license": "ISC",
   "description": "Demo of Clean Code Chapter 8: Boundaries",
   "main": "index.js",
+  "homepage": "http://tylerhawkins.info/boundaries-demo/build/",
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
