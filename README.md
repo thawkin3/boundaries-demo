@@ -1,6 +1,6 @@
 # Clean Code, Chapter 8: Boundaries
 
-This project is meant to demonstrate some concepts from Chapter 8 of Clean Code.
+This project is meant to demonstrate some concepts from Chapter 8 of Clean Code. You can view the demo app here: http://tylerhawkins.info/boundaries-demo/build/
 
 ## Key Concepts
 
